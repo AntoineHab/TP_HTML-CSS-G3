@@ -21,13 +21,37 @@
             <li>API</li>
         </ul>
     </nav>
-    <main>
-        <h1>HTML</h1>
-        <article>BlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlabla</article><!--span-->
-        <aside><img src="2019_LOGO-POLE-NUM-4.png" alt="logo"/></aside>
-        <aside><img src="2019_LOGO-POLE-NUM-4.png" alt="logo"/></aside>
-        <article>BlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlabla</article>
-    </main>
+    <h1 id="titre_contact">Contactez-Nous</h1>
+    <form methode="post" action="php">
+        <fieldset>
+            <legend>Info personnelles </legend>
+            <label for="prénom">Prénom :</label><br/>
+            <input type="text" name="prénom" id="prénom" maxlength="20" minlength="2" placeholder="ex: Jaque"><br/>
+            <label for="nom">Nom :</label><br/>
+            <input type="text" name="nom" id="nom" maxlength="20" minlength="2" placeholder="ex: Chirac"><br/>
+            <label for="mail">Email :</label><br/>
+            <input type="email" name="email" id="email" placeholder="ex: jaque.chirac31@hotmail.fr"><br/>
+            <label for="tel">Numéro :</label><br/>
+            <input type="tel" name="tel" id="tel" placeholder="ex: 0638686868"><br/>
+            <label for="age">Age :</label><br/>
+            <input type="number" name="age" id="age" placeholder="ex:62"><br/>
+            <label for="commentaire">Commentaire</label><br/>
+            <textarea name="commentaire" id="commentaire" rows="10" cols="70" placeholder="Parlez-nous de vous"></textarea></br>
+        </fieldset>
+        <fieldset>
+            <legend>Vous préferez</legend>
+            <input type="checkbox" checked name="html" id="html" >
+            <label for="html">Le HTML</label><br/>
+            <input type="checkbox" name="css" id="css">
+            <label for="css">Le CSS</label><br/>
+            <input type="checkbox" name="js" id="js">
+            <label for="js">Le JavaScript</label><br/>
+            <input type="checkbox" name="rien" id="rien">
+            <label for="rien">Je ne code pas</label>
+        </fieldset>
+        <input type="submit" value="Envoyer">
+            <input type="reset" value="Reset">
+    </form>
     <footer>
         <p>Contact</p><!--logo navigator + contact-->
     </footer>
