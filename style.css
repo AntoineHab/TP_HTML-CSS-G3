@@ -3,6 +3,12 @@ body {
     height: 100vh;
 }
 
+#blason {
+
+    max-width: none;
+    max-height: none;
+}
+
 /* BARRE HEADER */
 
 header{
@@ -48,24 +54,14 @@ ul {
 
 footer {
 
-    position: absolute;
+    position: fixed;
+    bottom: 0;
     background-color: #262626;
     width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
 
-}
-
-footer {
-
-   text-align: center;
-   color: white;
-   font-weight: bold;
-
-}
-
-#blason {
-
-    max-width: none;
-    max-height: none;
 }
 
 /* MAIN */
